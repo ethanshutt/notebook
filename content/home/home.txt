@@ -1,0 +1,22 @@
+Title: Home
+
+----
+
+Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
+
+----
+
+Text: 
+
+# Notebook Starterkit
+
+This is a default (link: http://getkirby.com text: KirbyCMS) Starterkit made by Ethan Shutt to expedite whatever silly ideas he might have.
+
+#### The Basics:
+- Basic Styling using D.R.Y. Principles
+- Immediately Responsive
+- Loops to pull child content dynamically from page-to-page
+- Component based layouts
+----
+
+Featuredimage: camperbw.jpg

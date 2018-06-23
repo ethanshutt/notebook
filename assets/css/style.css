@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Sintony|Space+Mono');
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Typography */
+body {
+  color: #636363;
+  font-size: 100%;
+  font-family: 'Sintony', sans-serif;
+}
+@media (min-width 600px) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 850px) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    font-size: 120%;
+  }
+}
+/* Links & Anchor Tags */
+a {
+  color: #5875f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #4a5bd6;
+  text-decoration: underline;
+}
+a:visited {
+  color: #4a5bd6;
+}
+/* General Typography */
+mark {
+  background: #F9ECB6;
+  padding: 0 .2em;
+}
+h1,h2,h3,h4,h5 {
+  color: #343434;
+  line-height: 1.6;
+  margin-bottom: .5rem;
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2.2em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.6em;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin: 0 0 2.5em 0;
+}
+.no-bold {
+  font-weight: normal;
+}
+/* Quotes, Code, Rules */
+blockquote {
+  border-left: 10px solid #f8f8f8;
+  color: #999999;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 0 1.5em;
+  padding: 0 2em;
+}
+blockquote cite {
+  display: block;
+  margin-top: 1em;
+  text-align: left;
+}
+cite {
+  margin-bottom: 2em;
+}
+pre, code {
+  font-family: 'Space Mono', monospace;
+}
+code, kbd, samp, var {
+  color: #F3996F;
+  font-size: 1em;
+}
+pre {
+  background: #f8f8f8;
+  border-radius: 4px;
+  font-size: 1em;
+  margin: 3em 0;
+  padding: 2em;
+}
+.page-title {
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+/* Containers */
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 2em;
+}
+@media (min-width: 850px) {
+  .container {
+    max-width: 1000px;
+  }
+  .sm-container {
+    max-width: 600px;
+  }
+  .med-container {
+    max-width: 800px;
+  }
+}
+.gradient {
+   background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+}
+/* Menus */
+.nav {
+  margin: 2em 0;
+}
+.menu {
+  display: inline-block;
+  margin: 0 0 0 2em;
+  padding: 0;
+  vertical-align: baseline;
+}
+.menu-item {
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+/* Layout */
+section, .section {
+  padding: 2em 0;
+}
+.text-center {
+  text-align: center;
+}
+.site-header {
+  height: 80vh;
+  padding: 4em 0 0 0;
+}
+.bg-color {
+  background: #4a5bd6;
+  color: #fff;
+}
+/* Lists */
+ul li {
+  list-style: disc;
+}
+ol li {
+  list-style: decimal;
+}
+ul li ul, ol li ol {
+  margin: 0;
+}
+dl, ol, table, ul {
+  line-height: 1.8;
+  margin: 0 0 1.5rem;
+}
+dt {
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+dd {
+  margin-bottom: 0.8rem;
+}
+/* Tables */
+table {
+  border-spacing: 0;
+  display: table;
+  max-width: 100%;
+  width: 100%;
+}
+td, th {
+  text-align: left;
+  padding: .5em;
+}
+td {
+  border-bottom: 1px solid #ccc;
+}
+thead th {
+  border-bottom: 2px solid #8c8c8c;
+}
+tfoot th {
+  border-top: 2px solid #8c8c8c;
+}
+/* Forms */
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], select, textarea {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .75em;
+  background: transparent;
+  margin-bottom: .5em;
+  font-size: 1em;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+select, textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  margin: 1.5em 0 1em;
+  width: 100%;
+}
+/* Buttons */
+.button, a.button, [type=submit], [type=reset], [type=button], button {
+  -webkit-appearance: none;
+  background: #5875f1;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  margin: 0 0 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.button:hover, a.button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover, button:hover {
+  background: #4a5bd6;
+  color: #fff;
+  text-decoration: none;
+}
+.muted-button {
+  background: none;
+  border: 1px solid #ccc;
+  color: #343434;
+} 
+.muted-button:hover {
+  background: none;
+  border: 1px solid #343434;
+  color: #343434;
+}
+.accent-button {
+  background: #F3996F;
+}
+.accent-button:hover {
+  background: #ED6728;
+}
+.round-button{
+  border-radius: 20px;
+}
+.full-width {
+  width: 100%;
+}
