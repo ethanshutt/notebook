@@ -2,4 +2,12 @@ Title: About
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt nobis facilis fugiat adipisci quae asperiores fugit, nemo sit cupiditate voluptatum? Nobis, ducimus consequatur adipisci nostrum eos sed aut! Vel.
+Text: Straight out of the box, Notebook aims to give you everything you need and nothing that you don't.
+
+----
+
+Gallery: false
+
+----
+
+Intro: Sometimes it can be difficult to start a site from scratch, this is why I wanted to build a simple starterkit to make the process that much easier.

@@ -1,6 +1,6 @@
-<footer class="site-footer">
-    <div class="container">
-      <h3>Links</h3>    
+<footer>
+    <div class="container site-footer">
+      <h4>Links</h4>  
       <ul class="footer-links">
         <?php foreach($pages->visible() as $item): ?>
           <li class="footer-link-item">
@@ -8,7 +8,7 @@
           </li>
         <?php endforeach ?>
       </ul>
-      <p id="copyright"><?= $site->copyright()->kirbytext() ?></p>
+      <?= $site->copyright()->kirbytext() ?>
     </div>
 </footer>
 <?= js('assets/js/scripts.js') ?>

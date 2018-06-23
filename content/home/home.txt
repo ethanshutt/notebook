@@ -10,13 +10,20 @@ Text:
 
 # Notebook Starterkit
 
-This is a default (link: http://getkirby.com text: KirbyCMS) Starterkit made by Ethan Shutt to expedite whatever silly ideas he might have.
+A default (link: http://getkirby.com text: KirbyCMS) Starterkit made by Ethan Shutt to expedite client work and side projects.
 
+---
+
+See the code on (link: https://github.com/ethanshutt/notebook text: GitHub)
 #### The Basics:
-- Basic Styling using D.R.Y. Principles
-- Immediately Responsive
-- Loops to pull child content dynamically from page-to-page
-- Component based layouts
+- Responsive out of the box
+- Component-based layouts
+- (link: /error text: Error Page)
+- Galleries Built In
+- SEO Best Practices in mind
+
+---
+
 ----
 
 Featuredimage: camperbw.jpg

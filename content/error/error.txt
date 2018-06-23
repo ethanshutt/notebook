@@ -1,4 +1,4 @@
-Title: Home
+Title: Error
 
 ----
 
@@ -6,12 +6,12 @@ Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
 
 ----
 
-Text: 
-
-##UH OH
-
-You seem to have made a mistake. Go back to the (link: / text: Homepage) and try again.
+Text: You seem to have made a mistake. Go back to the (link: / text: Homepage) and try again.
 
 ----
 
 Featuredimage: camperbw.jpg
+
+----
+
+Gallery: false

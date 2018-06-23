@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sintony|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Sintony|Oxygen+Mono');
 
 html {
   box-sizing: border-box;
@@ -39,6 +39,9 @@ a:hover {
 }
 a:visited {
   color: #4a5bd6;
+}
+.footer-link-item {
+  list-style: none;
 }
 /* General Typography */
 mark {
@@ -92,7 +95,7 @@ cite {
   margin-bottom: 2em;
 }
 pre, code {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Oxygen Mono', monospace;
 }
 code, kbd, samp, var {
   color: #F3996F;
@@ -105,9 +108,16 @@ pre {
   margin: 3em 0;
   padding: 2em;
 }
-.page-title {
-  color: #fff;
-  text-shadow: 2px 2px 8px #000;
+hr {
+  border: 0;
+  padding: 0;
+  height: 4px;
+  background: #707070;
+  width: 40%;
+  margin-right: 60%;
+}
+.site-footer p {
+  font-size: .8em;
 }
 /* Containers */
 .container {
@@ -150,13 +160,9 @@ section, .section {
 .text-center {
   text-align: center;
 }
-.site-header {
-  height: 80vh;
-  padding: 4em 0 0 0;
-}
-.bg-color {
-  background: #4a5bd6;
-  color: #fff;
+.site-footer {
+  border-top: 4px solid #707070;
+  padding: 2em;
 }
 /* Lists */
 ul li {
@@ -178,6 +184,9 @@ dt {
 }
 dd {
   margin-bottom: 0.8rem;
+}
+.footer-links {
+  padding: 0;
 }
 /* Tables */
 table {

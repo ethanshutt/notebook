@@ -4,6 +4,15 @@ fields:
   title:
     label: Title
     type:  text
+    
+  intro:
+    label: Intro
+    type: textarea
+    
+  gallery:
+    label: Does this page have a gallery?
+    type: toggle
+    text: yes/no
 
   text:
     label: Text

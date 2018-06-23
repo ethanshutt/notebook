@@ -2,4 +2,55 @@ Title: Gallery
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sit eaque, ea, eos quas repudiandae cumque. Enim, labore perferendis cupiditate! Maxime non reprehenderit veniam itaque nisi voluptates vel ut accusantium.
+Text: 
+
+Each page has a gallery function built-in automatically. 
+
+#### How it works
+Each page is built from the `default.yml` blueprint and the `default.php` template.
+
+The blueprint for the gallery is very simple.
+``` 
+gallery:
+    label: Does this page have a gallery?
+    type: toggle
+    text: yes/no 
+```
+
+Whereas the code from the template and snippet are where the majority of the work is done.
+
+`default.php` - page template
+```
+<?php snippet('gallery') ?>
+```
+
+`gallery.php` - gallery snippet
+```
+<?php if ($page->gallery()->bool()) : ?>
+  <section id="gallery">
+    <div class="container med-container">
+    <?php if ($page->hasImages()): ?>
+        <?php foreach($page->images() as $image) : ?>
+          <img src="<?= $image->url() ?>" alt="" class="full-width">
+        <?php endforeach ?>
+      <?php else : ?>
+        <h4 class="text-center">Yikes!</h4>
+        <p class="text-center">There should be a gallery here! <br /> But there aren't any images showing up.</p>
+    <?php endif ?>
+    </div>
+  </section>
+<?php endif ?>
+```
+
+See it in action below! (Please forgive my photography, they were the only local photos on my machine at this time)
+
+----
+
+Gallery: true
+
+----
+
+Intro: 
+
+Pages automatically have gallery functionality built in.
+Each page's gallery is built simply by adding an image to the “Files” tab of a page.
