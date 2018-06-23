@@ -5,6 +5,6 @@ A default Starterkit made by Ethan Shutt for KirbyCMS to expedite client work an
 #### The Basics:
 - Responsive out of the box
 - Component-based layouts
-- (link: /error text: Error Page)
+- Error Page
 - Galleries Built In
 - SEO Best Practices in mind
