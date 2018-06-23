@@ -1,6 +1,6 @@
 # Notebook Starterkit
 
-A default (link: http://getkirby.com text: KirbyCMS) Starterkit made by Ethan Shutt to expedite client work and side projects.
+A default Starterkit made by Ethan Shutt for KirbyCMS to expedite client work and side projects.
 
 #### The Basics:
 - Responsive out of the box
