@@ -3,7 +3,7 @@
     <div class="container">
       <h3><?= $section->title() ?></h3>
       <?= $section->intro()->kirbytext() ?>
-      <a href="<?= $section->url() ?>">Read On..</a>
+      <a class="button" href="<?= $section->url() ?>">Read On..</a>
     </div>
   </section>
 <?php endforeach ?>
