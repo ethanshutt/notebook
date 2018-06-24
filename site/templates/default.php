@@ -9,5 +9,8 @@
     </div>
     </section>
     <?php snippet('gallery') ?>
+    <?php if($page->uid() == 'blog'): ?>
+      <?php snippet('posts') ?>
+    <?php endif ?>    
   </main>
 <?php snippet('footer') ?>

@@ -1,0 +1,18 @@
+Title: Post One
+
+----
+
+Gallery: false
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, amet, esse quisquam dolorem perspiciatis sint magnam molestias?
+Odio quia ipsa repellendus fugiat, dicta repellat sit assumenda iure numquam, itaque magni.
+
+----
+
+Tags: 
+
+----
+
+Date: 2018-06-23
