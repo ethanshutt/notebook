@@ -3,7 +3,7 @@
     <div class="container med-container">
     <?php if ($page->hasImages()): ?>
         <?php foreach($page->images() as $image) : ?>
-          <img src="<?= $image->url() ?>" alt="" class="full-width">
+          <img data-src="<?= $image->url() ?>" src="<?= $image->resize(5,5,90)->url() ?>" alt="" class="full-width lazy">
         <?php endforeach ?>
       <?php else : ?>
         <h4 class="text-center">Yikes!</h4>

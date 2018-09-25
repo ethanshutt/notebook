@@ -137,8 +137,8 @@ hr {
     max-width: 800px;
   }
 }
-.gradient {
-   background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+.gray {
+   background: #ccc;)
 }
 /* Menus */
 .nav {
@@ -281,6 +281,6 @@ label {
 .round-button{
   border-radius: 20px;
 }
-.full-width {
+.full-width, .full-width img  {
   width: 100%;
 }

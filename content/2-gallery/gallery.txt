@@ -4,6 +4,8 @@ Title: Gallery
 
 Text: 
 
+(image: img_6201-small.jpg class: full-width)
+
 Each page has a gallery function built-in automatically. 
 
 #### How it works
@@ -24,6 +26,8 @@ Whereas the code from the template and snippet are where the majority of the wor
 <?php snippet('gallery') ?>
 ```
 
+(image: camperbw.jpg class: full-width text: this is a camper)
+
 `gallery.php` - gallery snippet
 ```
 <?php if ($page->gallery()->bool()) : ?>
@@ -41,6 +45,8 @@ Whereas the code from the template and snippet are where the majority of the wor
   </section>
 <?php endif ?>
 ```
+
+(image: dsc_0055-small.jpg class: full-width text: what)
 
 See it in action below! (Please forgive my photography, they were the only local photos on my machine at this time)
 
