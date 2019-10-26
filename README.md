@@ -1,10 +1,20 @@
-# Notebook Starterkit
+# Notebook Framework
+_RESTRUCTURING TO REMOVE DEPENDENCY ON CMS_
 
-A default Starterkit made by Ethan Shutt for KirbyCMS to expedite client work and side projects.
+A modern, lightweight component framework built with the basics of CSS and JS in mind.
 
-#### The Basics:
-- Responsive out of the box
-- Component-based layouts
-- Error Page
-- Galleries Built In
-- SEO Best Practices in mind
+## Goals:
+- Mobile First
+- Grid Based
+- Vanilla CSS
+- Vanilla JS
+- Universal Browser Compatibility
+
+## Checklist
+- Remove CMS Dependency
+- Create HTML Starter
+- Create Test Page
+- Reformat CSS 
+- Add Basic Interactivity with Vanilla JS
+- Create Example Site
+- Add Docs
