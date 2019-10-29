@@ -11,9 +11,9 @@ A modern, lightweight component framework built with the basics of CSS and JS in
 - Universal Browser Compatibility
 
 ## Checklist
-- Remove CMS Dependency
-- Create HTML Starter
-- Create Test Page
+- ~Remove CMS Dependency~
+- ~Create HTML Starter~
+- ~Create Test Page~
 - Reformat CSS 
 - Add Basic Interactivity with Vanilla JS
 - Create Example Site
