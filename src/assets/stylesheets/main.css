@@ -16,21 +16,27 @@ body {
 ** Layout
 */
 .container {
-  max-width: 600px;
+  max-width: 90%;
   margin: 1.5rem auto;
+  
 }
 
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+}
+}
 
 /* 
 ** Typography
 */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 1.5rem 0;
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child) {
+  margin-top: 3rem;
 }
 
 h1 {
@@ -128,6 +134,23 @@ kbd {
   border-bottom: 2px solid #ccc;
 }
 
+sup,
+sub,
+small {
+  font-size: .75rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+sup {
+  top: -.25rem;
+}
+
 /* 
 ** Inputs
 */
@@ -135,9 +158,17 @@ pre, blockquote {
   background: #eee;
   line-height: 1.4;
   max-width: 100%;
-  margin: 0 -2rem;
-  padding: 1rem 2rem;
-  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+pre {
+  overflow-x: scroll;
+  font-size: .9rem;
+}
+
+blockquote {
+  overflow-wrap: break-word;
 }
 
 blockquote cite {
@@ -146,28 +177,78 @@ blockquote cite {
 }
 
 hr {
-  width: 100% + 2em;
-  margin: 0 -2rem;
+  width: 100%;
+  margin: 0;
   border: none;
   height: 2px;
   background: #eee;
 }
 
+@media (min-width: 600px) {
+  pre, blockquote {
+    margin: 0 -2rem;
+    padding: 1rem 2rem;
+  }
+
+  pre {
+    font-size: 1rem;
+  }
+  
+  blockquote {
+    font-size: 1.25rem;
+  }
+
+  blockquote cite {
+    display: block;
+    margin: 1.5rem 0 0 0;
+    font-size: 1rem;
+  }
+
+  hr {
+    width: 100% + 2em;
+    margin: 0 -2rem;
+  }
+}
+
+
 /* 
 ** Lists
 */
+ul,
+ol {
+  line-height: 1.6;
+}
 
+ul li,
+ol li {
+  margin: 0;
+}
+
+ul li ul, 
+ol li ol {
+  margin: 0;
+}
 
 /* 
 ** Tables
 */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
+.table-container {
+  overflow: auto;
   max-width: 100%;
-  margin: 0 -2rem;
+  margin: 0;;
+}
+
+table {
+  border-spacing: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+thead,
+tfoot,
+tbody {
+  max-width: 100%;
 }
 
 thead th {
@@ -183,10 +264,114 @@ tfoot th {
 td {
   border-bottom: 1px solid #eee;
   color: #404040;
+  font-size: .9rem;
 }
 
 th,
 td {
   text-align: left;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
+}
+
+@media (min-width: 600px) { 
+  .table-container {
+    margin: 0 -2rem;
+}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* 
+** Buttons
+*/
+
+.button, a.button, button, [type=submit], [type=reset], [type=button] {
+  -webkit-appearance: none;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background: #ccc;
+  color: #404040;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  padding: .75rem 1.25rem;
+  margin: 0 0 .5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.button:hover, a.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
+  background: #eee;
+  color: #303030;
+  text-decoration: none;
+}
+
+.button:focus, .button:active, a.button:focus, a.button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
+  border: 1px solid #0250bc;
+  background: #0250bc;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* 
+** Forms
+*/
+
+[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  color: #404040;
+  padding: .75rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+
+[type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover {
+  border: 1px solid #ccc;
+}
+
+[type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #eee;
+}
+
+textarea {
+  overflow: auto;
+  height: auto;
+}
+
+select {
+  color: #404040;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+[type=range] {
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem 0 .5rem;
 }
