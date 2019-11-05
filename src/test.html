@@ -96,21 +96,21 @@
         </thead>
         <tbody>
           <tr>
-            <td><code>--container-narrow</code></td>
+            <td><code>--container-mobile</code></td>
             <td>480px</td>
           </tr>
           <tr>
-            <td><code>--container</code></td>
-            <td><code>calc(var(--container-narrow) * 1.5)</code></td>
+            <td><code>--container-tablet</code></td>
+            <td><code>calc(var(--container-mobile) * 1.5)</code></td>
           </tr>
           <tr>
-            <td><code>--container-wide</code></td>
-            <td><code>calc(var(--container) * 1.5)</code></td>
+            <td><code>--container-desktop</code></td>
+            <td><code>calc(var(--container-tablet) * 1.5)</code></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Breakpoints correspond with container sizing, although admittedly <code>@media</code> attributes don't seem to work with variables as they do in Sass.</p>
+    <p>Breakpoints are set to correspond with container sizes. Currently, <code>@media</code> attributes don't work with native CSS variables as they do in Sass or other preprocessers. So Notebook is designed to scale with the content.</p>
     <hr>
     <h2>Pretty Colors</h2>
     <p>It's also useful to set your color settings ahead of time.</p>
@@ -149,7 +149,7 @@
           </tr>
           <tr>
             <td><code>--focus</code></td>
-            <td style="background: #ccc;">#cccccc</td>
+            <td style="background: #ccc;">#ccc</td>
           </tr>
         </tbody>
       </table>
