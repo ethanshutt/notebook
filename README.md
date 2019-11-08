@@ -14,7 +14,9 @@ A modern, lightweight component framework built with the basics of CSS and JS in
 - ~Remove CMS Dependency~
 - ~Create HTML Starter~
 - ~Create Test Page~
-- Reformat CSS 
+- ~Reformat CSS~ 
+- Helper Classes
+- Organize CSS
 - Add Basic Interactivity with Vanilla JS
 - Create Example Site
 - Add Docs
