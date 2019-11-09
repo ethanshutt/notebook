@@ -1,7 +1,7 @@
 # Notebook Framework
 _RESTRUCTURING TO REMOVE DEPENDENCY ON CMS_
 
-A modern, lightweight component framework built with the basics of CSS and JS in mind.
+A modern, lightweight framework built with the basics of CSS and JS in mind.
 
 ## Goals:
 - Mobile First
