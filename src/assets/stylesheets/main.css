@@ -254,6 +254,10 @@ blockquote cite {
   margin: var(--spacing-md) 0 0 0;
 }
 
+figcaption {
+  margin-top: 0;
+}
+
 hr {
   width: 100%;
   margin: var(--spacing-md) 0;
@@ -377,6 +381,15 @@ td+td {
 }
 
 /* 
+** Assets
+*/
+.responsive-img {
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+
+/* 
 ** Buttons
 */
 
@@ -467,3 +480,7 @@ label {
   display: block;
   margin: var(--spacing-md) 0 var(--spacing-xs);
 }
+
+/* 
+** Helpers
+*/
