@@ -11,7 +11,6 @@ var dir = {
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
-var sourcemaps = require('gulp-sourcemaps');
 
 function css(done) {
     gulp.src(dir.src + '**/*.css')
@@ -21,7 +20,6 @@ function css(done) {
             console.log(`${details.name}: ${details.stats.originalSize}`);
             console.log(`${details.name}: ${details.stats.minifiedSize}`);
         }))
-        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dir.dist))
         done();
 }

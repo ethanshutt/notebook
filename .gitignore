@@ -1,5 +1,7 @@
 # System files
 node_modules
-# Temporary files
-
+# remove gulp, used only for minifications
+gulpfile.js
+package.json
+package-lock.json
 # Secure files
