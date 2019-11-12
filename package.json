@@ -1,0 +1,23 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "_RESTRUCTURING TO REMOVE DEPENDENCY ON CMS_",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanshutt/notebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanshutt/notebook/issues"
+  },
+  "homepage": "https://github.com/ethanshutt/notebook#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
