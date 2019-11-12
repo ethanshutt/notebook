@@ -1,13 +1,10 @@
 # Notebook Framework
-_RESTRUCTURING TO REMOVE DEPENDENCY ON CMS_
 
-A modern, lightweight framework built with the basics of CSS and JS in mind.
+A modern, lightweight framework built with vanilla CSS.
 
 ## Goals:
 - Mobile First
-- Grid Based
 - Vanilla CSS
-- Vanilla JS
 - Universal Browser Compatibility
 
 ## Checklist
@@ -15,8 +12,8 @@ A modern, lightweight framework built with the basics of CSS and JS in mind.
 - ~Create HTML Starter~
 - ~Create Test Page~
 - ~Reformat CSS~ 
-- Helper Classes
-- Organize CSS
+- ~Helper Classes~
+- ~Organize CSS~
 - Add Basic Interactivity with Vanilla JS
 - Create Example Site
 - Add Docs
