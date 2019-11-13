@@ -14,6 +14,5 @@ A modern, lightweight framework built with vanilla CSS.
 - ~Reformat CSS~ 
 - ~Helper Classes~
 - ~Organize CSS~
-- Add Basic Interactivity with Vanilla JS
 - Create Example Site
 - Add Docs
