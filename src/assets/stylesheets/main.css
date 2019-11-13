@@ -1,8 +1,8 @@
 /* 
-** Set font size to base of 16px, 
+** Set font size to base of 16px
 */
 html { 
-    font-size: 16px; 
+  font-size: 16px; 
 }
 
 /* 
@@ -82,10 +82,10 @@ table {
   --container-desktop: calc(var(--container-tablet) * 1.5);
  
   /* Spacing */
-  --spacing-xs: .5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
+  --spacing-xs: .5em;
+  --spacing-sm: 1em;
+  --spacing-md: 1.5em;
+  --spacing-lg: 2em;
 
   /* Colors */
   --background: #fff;
@@ -112,7 +112,7 @@ body {
 
 .container {
   max-width: 95%;
-  margin: 1.5rem auto;
+  margin: var(--spacing-md) auto;
   
 }
 
@@ -226,11 +226,11 @@ small {
 }
 
 sub {
-  bottom: -0.25rem;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.25rem;
+  top: -.25em;
 }
 
 pre, blockquote {
@@ -268,8 +268,7 @@ hr {
 
 @media (min-width: 600px) {
   pre, blockquote {
-    margin: 0 -2rem;
-    padding: 1rem 2rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
   }
 
   pre {
@@ -298,7 +297,7 @@ hr {
 
 ul,
 ol {
-  line-height: 1.6;
+  line-height: calc(var(--default-line-height) * var(--text-scale));
 }
 
 ul li,
