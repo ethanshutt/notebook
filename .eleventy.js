@@ -1,8 +1,8 @@
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("src/assets/images");
-    eleventyConfig.addPassthroughCopy("src/assets/stylesheets");
-    eleventyConfig.addPassthroughCopy("src/assets/scripts");
+    eleventyConfig.addPassthroughCopy("site/assets/images");
+    eleventyConfig.addPassthroughCopy("site/assets/stylesheets");
+    eleventyConfig.addPassthroughCopy("site/assets/scripts");
 
     
     return {
@@ -11,10 +11,9 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'md',
         templateFormats: ["html", "liquid", "njk"],
         dir: {
-            data: "./_data",
             includes: "./_includes",
-            input: "./src",
-            output: "./dist",
+            input: "./site",
+            output: "./docs",
             layouts: "./_layouts"
         }
     }

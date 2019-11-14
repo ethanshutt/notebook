@@ -4,3 +4,8 @@ node_modules
 /gulpfile.js
 /package.json
 /package-lock.json
+
+#gh-pages setup
+site
+/.eleventy.js
+/.eleventyignore
