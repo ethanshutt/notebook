@@ -62,7 +62,7 @@ table {
 :root {
   /* Typography */
   --default-size: 1rem;
-  --text-scale: 1.2;
+  --text-scale: 1.1;
   --default-line-height: 1.4;
   --text-xs: calc(var(--default-size) / var(--text-scale));
   --text-sm: var(--default-size);
