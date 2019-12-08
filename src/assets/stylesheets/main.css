@@ -190,7 +190,6 @@ a:hover, a:active, a:focus {
 }
 
 mark,
-code,
 kbd {
   padding: 2px 3px;
   color: #101010;
@@ -204,10 +203,6 @@ pre {
 
 mark {
   background: #fff7b4;
-}
-
-code {
-  background: #eee;
 }
 
 kbd {
@@ -233,16 +228,29 @@ sup {
   top: -.25em;
 }
 
+blockquote {
+  border-left: 6px solid  var(--primary);
+  font-size: inherit;
+  margin: var(--spacing-lg) 0;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+code, pre {
+  font-family: var(--font-monospace);
+}
+
 pre, blockquote {
-  background: #eee;
-  max-width: 100%;
-  margin: 0;
   padding: var(--spacing-sm);
 }
 
 pre {
+  background: var(--font-color);
+  color: #ccc;
   overflow-x: scroll;
-  font-size: var(--text-xs);
+  font-size: var(--text-size-1);
 }
 
 blockquote {
