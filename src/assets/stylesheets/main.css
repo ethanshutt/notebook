@@ -1,11 +1,9 @@
 html {
-
   /*  Set font size to base of 16px */ 
   font-size: 16px; 
 }
 
 * { 
-  
   /* Inherit font styling from parent if otherwise undefined */
   font-family: inherit; 
   font-size: inherit;
@@ -22,7 +20,6 @@ caption, article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video { 
-  
   /* Clear margin, padding, and border styles of individual elements */
 	margin: 0;
 	padding: 0;
@@ -51,7 +48,6 @@ table {
 
 /* 
 ** Variable Setup
-** See documentation for more information.
 */
 
 :root {

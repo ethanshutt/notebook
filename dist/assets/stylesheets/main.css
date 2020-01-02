@@ -1,23 +1,16 @@
-/* 
-** Set font size to base of 16px
-*/
-html { 
+html {
+  /*  Set font size to base of 16px */ 
   font-size: 16px; 
 }
 
-/* 
-** Inherit font styling from parent if otherwise undefined.
-*/
-* {
-  font-family: inherit;
+* { 
+  /* Inherit font styling from parent if otherwise undefined */
+  font-family: inherit; 
   font-size: inherit;
   line-height: inherit;
   box-sizing: border-box;
 }
 
-/* 
-** Clear margin, padding, and border styles of individual elements
-*/
 div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -26,16 +19,14 @@ b, u, i, center, fieldset, legend, table,
 caption, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video { 
+  /* Clear margin, padding, and border styles of individual elements */
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
 }
 
-/* 
-** HTML5 display reset
-*/
 article,
 aside,
 figcaption,
@@ -46,7 +37,8 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  /* HTML5 display reset */
+  display: block;
 }
 
 table {
@@ -56,7 +48,6 @@ table {
 
 /* 
 ** Variable Setup
-** See documentation for more information.
 */
 
 :root {
@@ -97,7 +88,6 @@ table {
   --focus: #ccc;
 }
 
-
 body {
   background: var(--background);
   color: var(--font-color);
@@ -122,7 +112,7 @@ body {
 }
 }
 
-@media (min-width: 800) {
+@media (min-width: 800px) {
   .container {
     max-width: var(--container-desktop);
   }
@@ -191,8 +181,8 @@ a:hover, a:active, a:focus {
 
 mark,
 kbd {
-  padding: 2px 3px;
   color: #101010;
+  padding: 2px 3px;
 }
 
 code,
@@ -249,8 +239,8 @@ pre, blockquote {
 pre {
   background: var(--font-color);
   color: #ccc;
-  overflow-x: scroll;
   font-size: var(--text-size-1);
+  overflow-x: scroll;
 }
 
 blockquote {
@@ -267,11 +257,11 @@ figcaption {
 }
 
 hr {
-  width: 100%;
-  margin: var(--spacing-md) 0;
+  background: #eee;
   border: none;
   height: 2px;
-  background: #eee;
+  margin: var(--spacing-md) 0;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -323,18 +313,18 @@ ol li ol {
 */
 
 .table-container {
-  overflow: auto;
-  max-width: 100%;
   margin: var(--spacing-md) 0;
+  max-width: 100%;
+  overflow: auto;
 }
 
 table {
-  width: 100%;;
   border-spacing: 0;
   font-size: var(--text-xs);
-  margin: 0;
   line-height: 1.6;
+  margin: 0;
   white-space: nowrap;
+  width: 100%;
 }
 
 thead,
@@ -361,8 +351,8 @@ td {
 
 th,
 td {
-  text-align: left;
   padding: var(--spacing-xs) 0;
+  text-align: left;
 }
 
 th+th,
@@ -375,11 +365,11 @@ td+td {
     margin: var(--spacing-lg) 0;
 }
   table {
-    font-size: var(--text-sm);
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
+    font-size: var(--text-sm);
     max-width: 100%;
+    width: 100%;
   }
   th,
   td {
@@ -393,21 +383,21 @@ td+td {
 
 .button, a.button, button, [type=submit], [type=reset], [type=button] {
   -webkit-appearance: none;
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
   background: #ccc;
+  border: none;
+  border-radius: 4px;
   color: #404040;
+  cursor: pointer;
+  display: inline-block;
   font-weight: 600;
   font-size: 1rem;
-  text-transform: none;
-  padding: var(--spacing-xs) var(--spacing-md);
-  margin: 0 0 .5rem 0;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
   line-height: 1;
+  margin: 0 0 .5rem 0;
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
 }
 
 .button:hover, a.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
@@ -417,8 +407,8 @@ td+td {
 }
 
 .button:focus, .button:active, a.button:focus, a.button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
-  border: 1px solid #0250bc;
   background: #0250bc;
+  border: 1px solid #0250bc;
   color: #ffffff;
   text-decoration: none;
 }
@@ -427,19 +417,18 @@ form {
   max-width: var(--container-desktop);
 }
 
-
 input, select, textarea {
-  display: block;
+  background: transparent;
   border: 1px solid #eee;
   border-radius: 2px;
   color: #404040;
-  padding: var(--spacing-xs);
-  outline: none;
-  background: transparent;
-  margin-bottom: .5rem;
+  display: block;
   font-size: 1rem;
-  width: 100%;
   line-height: 1;
+  margin-bottom: .5rem;
+  outline: none;
+  padding: var(--spacing-xs);
+  width: 100%;
 }
 
 input:hover, select:hover, textarea:hover {
@@ -452,14 +441,14 @@ input:focus, input:active, select:focus, select:active, textarea:focus, textarea
 }
 
 textarea {
-  overflow: auto;
   height: auto;
+  overflow: auto;
 }
 
 select {
-  color: #404040;
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: #404040;
   line-height: 1;
   width: 100%;
 }
@@ -473,10 +462,10 @@ select::-ms-expand {
 }
 
 label {
-  font-weight: 600;
-  max-width: 100%;
   display: block;
+  font-weight: 600;
   margin: var(--spacing-md) 0 var(--spacing-xs);
+  max-width: 100%;
 }
 
 /* 
@@ -555,7 +544,7 @@ label {
 }
 
 .vertical-center {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }

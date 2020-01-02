@@ -4,3 +4,5 @@ node_modules
 /gulpfile.js
 /package.json
 /package-lock.json
+# mac files
+.DS_Store
