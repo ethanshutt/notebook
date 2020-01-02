@@ -1,10 +1,8 @@
-
 html {
 
   /*  Set font size to base of 16px */ 
   font-size: 16px; 
 }
-
 
 * { 
   
@@ -14,7 +12,6 @@ html {
   line-height: inherit;
   box-sizing: border-box;
 }
-
 
 div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -95,7 +92,6 @@ table {
   --focus: #ccc;
 }
 
-
 body {
   background: var(--background);
   color: var(--font-color);
@@ -120,7 +116,7 @@ body {
 }
 }
 
-@media (min-width: 800) {
+@media (min-width: 800px) {
   .container {
     max-width: var(--container-desktop);
   }
@@ -424,7 +420,6 @@ td+td {
 form {
   max-width: var(--container-desktop);
 }
-
 
 input, select, textarea {
   background: transparent;
