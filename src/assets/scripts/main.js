@@ -1,1 +1,1 @@
-// blank Javascript file
+// this is a blank Javascript file

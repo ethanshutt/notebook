@@ -4,5 +4,12 @@ node_modules
 /gulpfile.js
 /package.json
 /package-lock.json
-# mac files
+
+# only push dist/
+src
+
+# OS X
 .DS_Store
+._*
+.Spotlight-V100
+.Trashes
