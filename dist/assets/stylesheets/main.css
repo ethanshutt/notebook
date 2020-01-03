@@ -180,8 +180,10 @@ p+p {
 a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--primary);
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-color: var(--primary);
+          text-decoration-color: var(--primary);
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a:hover, a:active, a:focus {
@@ -553,7 +555,10 @@ label {
 }
 
 .vertical-center {
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
