@@ -4,11 +4,11 @@
  * A modern, lightweight boilerplate built with vanilla CSS.
  *
  * Author: Ethan Shutt <ethan@ethanmade.it>
- * Source: https://github.com/ethanshutt/notebook
+ * Source Code: https://github.com/ethanshutt/notebook
  */
 
 html {
-  /*  Set font size to base of 16px */ 
+  /*  Set font size to base size of 16px */ 
   font-size: 16px; 
 }
 
