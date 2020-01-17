@@ -61,7 +61,7 @@ table {
 
 :root {
   /* Typography */
-  --default-size: 1rem;
+  --default-size: 1em;
   --text-scale: 1.12;
   --default-line-height: 1.4;
   --text-xs: calc(var(--default-size) / var(--text-scale));
@@ -78,8 +78,8 @@ table {
 
   /* Layout */
   --container-mobile: 400px;
-  --container-tablet: calc(var(--container-mobile) * 1.5);
-  --container-desktop: calc(var(--container-tablet) * 1.5);
+  --container-tablet: calc(var(--container-mobile) * 1.25);
+  --container-desktop: calc(var(--container-tablet) * 1.25);
  
   /* Spacing */
   --spacing-xs: .5em;
@@ -115,13 +115,13 @@ body {
   
 }
 
-@media (min-width: 720px) {
+@media (min-width: 600px) {
   .container {
     max-width: var(--container-tablet);
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .container {
     max-width: var(--container-desktop);
   }
@@ -133,6 +133,10 @@ h3:not(:first-child),
 h4:not(:first-child),
 h5:not(:first-child) {
   margin-top: var(--spacing-lg);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
 }
 
 h1 {
@@ -528,6 +532,14 @@ label {
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.more-bold {
+  font-weight: bolder;
+}
+
+.less-bold {
+  font-weight: lighter;
 }
 
 .inline {
