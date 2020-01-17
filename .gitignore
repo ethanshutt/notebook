@@ -1,10 +1,12 @@
 # node_modules
 node_modules
+
 # remove gulp, used only for minifications
 /gulpfile.js
 /package.json
 /package-lock.json
-build
+src
+public
 
 # OS X
 .DS_Store
