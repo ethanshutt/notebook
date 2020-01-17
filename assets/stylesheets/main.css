@@ -74,7 +74,7 @@ table {
   --font-primary: sans-serif;
   --font-secondary: serif;
   --font-monospace: monospace;
-  --font-color: #343434;
+  --font-color: #5a5a5a;
 
   /* Layout */
   --container-mobile: 400px;
@@ -236,6 +236,7 @@ sup {
 blockquote {
   border-left: 6px solid  var(--primary);
   font-size: inherit;
+  line-height: 1.6;
   margin: var(--spacing-lg) 0;
 }
 
