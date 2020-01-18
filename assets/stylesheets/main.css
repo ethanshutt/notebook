@@ -9,7 +9,7 @@
 
 html {
   /*  Set font size to base size of 16px */ 
-  font-size: 16px; 
+  font-size: 100%; 
 }
 
 * { 
@@ -164,21 +164,24 @@ p+p {
 }
 
 @media (min-width: 600px) {
-  h1 {
-    font-size: var(--text-xxxl);
-  }
-  h2 {
-    font-size: var(--text-xl);
-  }
-  h3 {
-    font-size: var(--text-lg);
-  }
-  h4 {
-    font-size: var(--text-md);
-  }
-  h5 {
-    font-size: var(--text-sm);
-  }
+ html {
+   font-size: 104%;
+   line-height: calc(var(--default-line-height) * 1.04);
+ }
+}
+
+@media (min-width: 1000px) {
+ html {
+   font-size: 108%;
+   line-height: calc(var(--default-line-height) * 1.08);
+ }
+}
+
+@media (min-width: 1200px) {
+ html {
+   font-size: 110%;
+   line-height: calc(var(--default-line-height) * 1.1);
+ }
 }
 
 a {
