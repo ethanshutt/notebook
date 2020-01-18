@@ -60,7 +60,7 @@ table {
 */
 
 :root {
-  /* Typography */
+  /* Modular Typography */
   --default-size: 1em;
   --text-scale: 1.12;
   --default-line-height: 1.4;
@@ -71,13 +71,14 @@ table {
   --text-xl: calc(var(--text-lg) * var(--text-scale));
   --text-xxl: calc(var(--text-xl) * var(--text-scale));
   --text-xxxl: calc(var(--text-xxl) * var(--text-scale));
+
+  /* Fonts */
   --font-primary: sans-serif;
   --font-secondary: serif;
   --font-monospace: monospace;
-  --font-color: #5a5a5a;
 
   /* Layout */
-  --container-mobile: 400px;
+  --container-mobile: 28em;
   --container-tablet: calc(var(--container-mobile) * 1.25);
   --container-desktop: calc(var(--container-tablet) * 1.25);
  
@@ -88,18 +89,26 @@ table {
   --spacing-lg: 2em;
 
   /* Colors */
-  --background: #fff;
-  --primary: #1fd3ac;
-  --secondary: #0250bc;
-  --accent: #eebe3b;
-  --error: #e46e59;
-  --success: #1ebe5c;
-  --focus: #ccc;
+  --background: #ffffff;
+  --text-color: #5a5a5a;
+  --light-color: #c4c4c4;
+  --dark-color: #2e2e2e;
+  --link-color: #487abb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2b2a2a;
+    --text-color: #e4e4e4;
+    --light-color: #3b3b3b;
+    --dark-color: #a5a4a4;
+    --link-color: #8eb8f0;
+  }
 }
 
 body {
   background: var(--background);
-  color: var(--font-color);
+  color: var(--text-color);
   font-family: var(--font-primary);
   font-size: var(--default-size);
   line-height: var(--default-line-height);
@@ -184,19 +193,18 @@ p+p {
 a {
   color: inherit;
   text-decoration: underline;
-  -webkit-text-decoration-color: var(--primary);
-          text-decoration-color: var(--primary);
+  -webkit-text-decoration-color: var(--link-color);
+          text-decoration-color: var(--link-color);
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 
 a:hover, a:active, a:focus {
-  color: var(--primary);
+  color: var(--link-color);
 }
 
 mark,
 kbd {
-  color: #101010;
   padding: 2px 3px;
 }
 
@@ -211,9 +219,9 @@ mark {
 }
 
 kbd {
-  background: #eee;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  background: var(--light-color);
+  border: 1px solid var(--text-color);
+  border-bottom: 2px solid var(--dark-color);
 }
 
 sup,
@@ -234,7 +242,7 @@ sup {
 }
 
 blockquote {
-  border-left: 6px solid  var(--primary);
+  border-left: 6px solid  var(--dark-color);
   font-size: inherit;
   line-height: 1.6;
   margin: var(--spacing-lg) 0;
@@ -253,8 +261,7 @@ pre, blockquote {
 }
 
 pre {
-  background: var(--font-color);
-  color: #ccc;
+  background: var(--light-color);
   font-size: var(--text-size-1);
   overflow-x: scroll;
 }
@@ -273,7 +280,7 @@ figcaption {
 }
 
 hr {
-  background: #eee;
+  background: var(--text-color);
   border: none;
   height: 2px;
   margin: var(--spacing-md) 0;
@@ -350,18 +357,18 @@ tbody {
 }
 
 thead th {
-  border-bottom: 2px solid #303030;
+  border-bottom: 2px solid var(--dark-color);
   padding-bottom: var(--spacing-xs);
 }
 
 tfoot th {
-  border-top: 2px solid #303030;
+  border-top: 2px solid var(--dark-color);
   padding-top: var(--spacing-xs);
 }
 
 td {
-  border-bottom: 1px solid #eee;
-  color: #404040;
+  border-bottom: 1px solid var(--light-color);
+  color: var(--dark-color);
   font-size: var(--text-sm);
 }
 
@@ -399,10 +406,10 @@ td+td {
 
 .btn, a.btn, button, [type=submit], [type=reset], [type=button] {
   -webkit-appearance: none;
-  background: #ccc;
+  background: var(--light-color);
   border: none;
   border-radius: 4px;
-  color: #404040;
+  color: var(--text-color);
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -417,15 +424,14 @@ td+td {
 }
 
 .btn:hover, a.btn:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
-  background: #eee;
-  color: #303030;
+  background: var(--dark-color);
+  color: var(--light-color);
   text-decoration: none;
 }
 
-.btn:focus, .btn:active, a.btn:focus, a.btn:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
-  background: #0250bc;
-  border: 1px solid #0250bc;
-  color: #ffffff;
+.btn:focus, a.btn:focus, button:focus, [type=submit]:focus, [type=reset]:focus, [type=button]:focus {
+  background: var(--light-color);
+  color: var(--dark-color);
   text-decoration: none;
 }
 
@@ -435,9 +441,9 @@ form {
 
 input, select, textarea {
   background: transparent;
-  border: 1px solid #eee;
+  border: 1px solid var(--dark-color);
   border-radius: 2px;
-  color: #404040;
+  color: var(--text-color);
   display: block;
   font-size: 1rem;
   line-height: 1;
@@ -448,11 +454,11 @@ input, select, textarea {
 }
 
 input:hover, select:hover, textarea:hover {
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark-color);
 }
 
 input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark-color);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px var(--focus);
 }
 
@@ -464,7 +470,7 @@ textarea {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #404040;
+  color: var(--dark-color);
   line-height: 1;
   width: 100%;
 }
