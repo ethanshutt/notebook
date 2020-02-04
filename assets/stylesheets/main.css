@@ -55,6 +55,7 @@ table {
     border-spacing: 0;
 }
 
+
 /* 
 ** Variable Setup
 */
@@ -78,9 +79,9 @@ table {
   --font-monospace: monospace;
 
   /* Layout */
-  --container-mobile: 28em;
-  --container-tablet: calc(var(--container-mobile) * 1.25);
-  --container-desktop: calc(var(--container-tablet) * 1.25);
+  --container-mobile: 90%;
+  --container-tablet: 30em;
+  --container-desktop: 32em;
  
   /* Spacing */
   --spacing-xs: .5em;
@@ -96,7 +97,7 @@ table {
   --link-color: #487abb;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #2b2a2a;
     --text-color: #e4e4e4;
@@ -104,7 +105,7 @@ table {
     --dark-color: #a5a4a4;
     --link-color: #8eb8f0;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -124,13 +125,13 @@ body {
   
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container {
     max-width: var(--container-tablet);
 }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .container {
     max-width: var(--container-desktop);
   }
@@ -173,20 +174,26 @@ p+p {
 }
 
 @media (min-width: 600px) {
-  h1 {
-    font-size: var(--text-xxxl);
+  html {
+    font-size: 105%;
   }
-  h2 {
-    font-size: var(--text-xl);
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 110%;
   }
-  h3 {
-    font-size: var(--text-lg);
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 115%;
   }
-  h4 {
-    font-size: var(--text-md);
-  }
-  h5 {
-    font-size: var(--text-sm);
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 120%;
   }
 }
 
