@@ -107,6 +107,11 @@ table {
   }
 } */
 
+html {
+  background-image: linear-gradient(to bottom, transparent 0px, transparent 23px, red 23px, red 24px);
+  background-size: 100% 24px;
+}
+
 body {
   background: var(--background);
   color: var(--text-color);
